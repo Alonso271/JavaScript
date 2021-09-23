@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    Operando A <input type="text" id="OperandoA"> Operando B <input type="text" id="OperandoB">
+    <br>
+    <br> Resultado <input type="text" id="Resultado">
+    <br>
+    <input type="button" value="Sumar" onclick="Suma()">
+</body>
+<script>
+    function Suma() {
+        let OpA = document.getElementById("OperandoA").value;
+        let OpB = document.getElementById("OperandoB").value;
+        var suma = Number(OpA) + Number(OpB);
+        document.getElementById("Resultado").value = suma;
+    }
+</script>
+
+</html>
