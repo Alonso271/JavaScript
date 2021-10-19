@@ -8,13 +8,13 @@
 </head>
 <body>
     Introduce tu nombre: <input type="text" id="nombre"><br>
-    Introduce tu apellidos: <input type="text" id="apellidos"><br>
+    Introduce tus apellidos: <input type="text" id="apellidos"><br>
     Introduce tu salario: <input type="number"  step="any" min="0" id="salario"/><br>
     Introduce tu edad: <input type="number" id="edad" min="0"><br>
     Resultado: <textarea id="resu" cols="30" rows="10"></textarea><br>
     <input type="submit" value="Enviar" onclick="calcularSalario()">
 </body>
-<script type="text/javascript">
+<script>
 function calcularSalario() {
     var edad = document.getElementById("edad").value;
     var salario = document.getElementById("salario").value;
@@ -41,7 +41,7 @@ function calcularSalario() {
         }
     }
     var resu = document.getElementById("resu");
-    resu.innerHTML= "Nombre: "+nombre+"Apellidos:"+apellidos+"Salario: "+salario+"Edad: "+edad;
+    resu= "Nombre: "+nombre+"Apellidos:"+apellidos+"Salario: "+salario+"Edad: "+edad;
     }
 </script>
 </html>
